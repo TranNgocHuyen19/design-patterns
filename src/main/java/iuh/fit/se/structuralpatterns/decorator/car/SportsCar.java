@@ -1,0 +1,13 @@
+package iuh.fit.se.structuralpatterns.decorator.car;
+
+public class SportsCar extends CarDecorator{
+    public SportsCar(Car car) {
+        super(car);
+    }
+
+    @Override
+    public void assemble() {
+        super.assemble();
+        System.out.println("Adding sport features");
+    }
+}
